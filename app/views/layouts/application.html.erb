@@ -12,10 +12,10 @@
   	<nav>
 	  	<%= link_to "Home", "/" %>
 	  	<% if session[:user_id] %>
-	  		<%= link_to "Logout" %>
+	  		<%= link_to "Logout", '/logout' %>
 	  	<% else %>
 	  		<%= link_to "Sign Up", "/users/new" %>
-	  		<%= link_to "Log In" %>	
+	  		<%= link_to "Log In", '/login' %>	
 	  	<% end %>
   	</nav>
     <%= yield %>
