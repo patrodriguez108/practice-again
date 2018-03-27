@@ -9,6 +9,15 @@
   </head>
 
   <body>
+  	<nav>
+	  	<%= link_to "Home", "/" %>
+	  	<% if session[:user_id] %>
+	  		<%= link_to "Logout", '/logout' %>
+	  	<% else %>
+	  		<%= link_to "Sign Up", "/signup" %>
+	  		<%= link_to "Log In", '/login' %>	
+	  	<% end %>
+  	</nav>
     <%= yield %>
   </body>
 </html>

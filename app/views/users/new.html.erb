@@ -1,0 +1,23 @@
+<%= form_for :user, url: '/signup' do |f| %>
+
+	<%= f.label "First Name" %><br>
+	<%= f.text_field :first_name %><br>
+
+	<%= f.label "Last Name" %><br>
+	<%= f.text_field :last_name %><br>
+
+	<%= f.label "Username" %><br>
+	<%= f.text_field :username %><br>
+
+	<%= f.label "E-Mail" %><br>
+	<%= f.text_field :email %><br>
+
+	<%= f.label "Password" %><br>
+	<%= f.password_field :password %><br>
+
+	<%= f.label "Password Confirmation" %><br>
+	<%= f.password_field :password_confirmation %><br>
+
+	<%= f.submit "Register" %>
+
+<% end %>
