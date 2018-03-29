@@ -13,6 +13,7 @@ class PostsController < ApplicationController
 		if post.save
 			redirect_to '/posts'
 		else
+			@errors = post.errors.full_messages
 			render 'new'
 		end
 	end
