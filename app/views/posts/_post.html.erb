@@ -1,3 +1,3 @@
 <li><%= post.title %></li>
 <li><%= post.content %></li>
-<li>Posted by <%= post.user.username %> on <%= post.created_at %></li><br>
+<li>Posted by <%= post.user.username %> <%= post.created_at.strftime("on %m/%d/%Y at %I:%M%p") %></li><br>
